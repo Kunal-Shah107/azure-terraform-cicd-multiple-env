@@ -1,0 +1,9 @@
+resource_group_name = "my-resource-group-prod"
+location            = "uaenorth"
+vm_name             = "prod-my-windows-vm"
+vm_size             = "Standard_B2s"
+admin_username      = "admin_user"
+admin_password      = "P@$$w0rd1234!HH$@@(**XX"
+rdp_port            = 3389
+subnet_id           = "/subscriptions//resourceGroups/my-resource-group2/providers/Microsoft.Network/virtualNetworks/prod-vnet/subnets/internal"
+vnet_name           = "prod-vnet"
