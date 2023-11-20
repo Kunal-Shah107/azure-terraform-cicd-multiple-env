@@ -2,12 +2,12 @@
 
 variable "resource_group_name" {
   type        = string
-  description = "The name of the resource group to create the virtual machine in"
+  description = "demo-multi-stage"
 }
 
 variable "location" {
   type        = string
-  description = "The location to create the virtual machine in"
+  description = "UAE North"
 }
 
 variable "vm_name" {

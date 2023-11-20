@@ -5,7 +5,7 @@ provider "azurerm" {
 module "rg" {
   source              = "./azure-resource-group"
   resource_group_name = "my-resource-group2"
-  location            = "australiaeast"
+  location            = "uaenorth"
 }
 module "windows_vm" {
   source              = "./azure-windows-vm/"

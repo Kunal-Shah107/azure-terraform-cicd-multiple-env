@@ -5,7 +5,7 @@ parameters:
     default: dev
     values:
       - dev
-      - tst
+      - test
       - prod
   - name: TfPlanPath
     displayName: Terraform Plan Path
