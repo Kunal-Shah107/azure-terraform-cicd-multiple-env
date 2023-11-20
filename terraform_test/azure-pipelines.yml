@@ -20,7 +20,7 @@ trigger:
   - feature/*
 
 variables:
-  - group: Terraform-Pipeline-Test
+  - group: azure-terraform-cicd-multiple-env
 
 stages:
   - stage: Authenticate
