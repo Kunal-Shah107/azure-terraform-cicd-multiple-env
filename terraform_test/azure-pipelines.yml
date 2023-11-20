@@ -71,6 +71,7 @@ stages:
                 export ARM_CLIENT_SECRET=$servicePrincipalKey
                 export ARM_TENANT_ID=$tenantId
                 export TF_IN_AUTOMATION=true
+                export subscriptionId=$subscriptionId
 
                 terraform init \
                 -input=false \
@@ -94,6 +95,7 @@ stages:
                 export ARM_CLIENT_SECRET=$servicePrincipalKey
                 export ARM_TENANT_ID=$tenantId
                 export TF_IN_AUTOMATION=true
+                export subscriptionId=$subscriptionId
 
                 chmod -R +x .terraform
                 terraform plan \
@@ -153,6 +155,7 @@ stages:
                       export ARM_CLIENT_SECRET=$servicePrincipalKey
                       export ARM_TENANT_ID=$tenantId
                       export TF_IN_AUTOMATION=true
+                      export subscriptionId=$subscriptionId
 
                       chmod -R +x .terraform
                       terraform version
