@@ -32,7 +32,7 @@ stages:
           - task: AzureCLI@2
             displayName: "Authenticate with Azure"
             inputs:
-              azureSubscription: "Azure subscription 1" # Service Connection
+              azureSubscription: "AzureAccountConnection" # Service Connection
               scriptType: "bash"
               scriptLocation: "inlineScript"
               inlineScript: |
@@ -61,7 +61,7 @@ stages:
             displayName: Terraform Init
             inputs:
               workingDirectory: $(System.DefaultWorkingDirectory)/terraform_test/
-              azureSubscription: "Azure subscription 1" # Service Connection
+              azureSubscription: "AzureAccountConnection" # Service Connection
               scriptType: bash
               scriptLocation: inlineScript
               addSpnToEnvironment: true
@@ -83,7 +83,7 @@ stages:
             displayName: Terraform Plan
             inputs:
               workingDirectory: $(System.DefaultWorkingDirectory)/terraform_test/
-              azureSubscription: "Azure subscription 1" # Service Connection
+              azureSubscription: "AzureAccountConnection" # Service Connection
               scriptType: bash
               scriptLocation: inlineScript
               addSpnToEnvironment: true
@@ -142,7 +142,7 @@ stages:
                   displayName: Terraform Apply
                   inputs:
                     workingDirectory: $(System.DefaultWorkingDirectory)/terraform_test/
-                    azureSubscription: "Azure subscription 1" # Service Connection
+                    azureSubscription: "AzureAccountConnection" # Service Connection
                     scriptType: bash
                     scriptLocation: inlineScript
                     addSpnToEnvironment: true
