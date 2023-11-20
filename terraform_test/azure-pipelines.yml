@@ -105,7 +105,7 @@ stages:
             displayName: "Download Terraform state file"
             inputs:
               workingDirectory: $(System.DefaultWorkingDirectory)/terraform_test/
-              azureSubscription: "Azure subscription 1"
+              azureSubscription: "AzureAccountConnection"
               scriptLocation: "inlineScript"
               scriptType: "bash"
               addSpnToEnvironment: true
